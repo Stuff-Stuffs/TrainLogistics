@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "unnamed_cart_expansion",
+	"version": "${version}",
+	"name": "UnnamedCartExpansion",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/unnamed_cart_expansion/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"io.github.stuff_stuffs.unnamed_cart_expansion.internal.CartExpansion"
+		],
+		"client": [
+			"io.github.stuff_stuffs.unnamed_cart_expansion.ExampleModClient"
+		]
+	},
+	"mixins": [
+		"unnamed_cart_expansion.mixins.json",
+		{
+			"config": "unnamed_cart_expansion.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.14.19",
+		"minecraft": "~1.19.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
