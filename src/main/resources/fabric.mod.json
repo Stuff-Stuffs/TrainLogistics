@@ -19,7 +19,7 @@
 			"io.github.stuff_stuffs.unnamed_cart_expansion.internal.CartExpansion"
 		],
 		"client": [
-			"io.github.stuff_stuffs.unnamed_cart_expansion.ExampleModClient"
+			"io.github.stuff_stuffs.unnamed_cart_expansion.CartExpansionClient"
 		]
 	},
 	"mixins": [
